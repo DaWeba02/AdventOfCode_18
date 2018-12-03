@@ -1045,12 +1045,12 @@ namespace AoC_Day1
    
         static int[] ToIntArr(string frequencys)
         {
-            string[] frequencysInCharArr = frequencys.Split('\n');
-            int[] frequencyInIntArr = new int[frequencysInCharArr.Length];
+            string[] frequencysInStringArr = frequencys.Split('\n');
+            int[] frequencyInIntArr = new int[frequencysInStringArr.Length];
 
             for(int i = 0; i < frequencyInIntArr.Length; i++)
             {
-                frequencyInIntArr[i] = int.Parse(frequencysInCharArr[i]);
+                frequencyInIntArr[i] = int.Parse(frequencysInStringArr[i]);
             }
 
             return frequencyInIntArr;
